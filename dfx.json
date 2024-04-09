@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "archetype_backend": {
+      "main": "src/archetype_backend/main.mo",
+      "type": "motoko"
+    },
+    "archetype_frontend": {
+      "dependencies": [
+        "archetype_backend"
+      ],
+      "source": [
+        "src/archetype_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "archetype_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
